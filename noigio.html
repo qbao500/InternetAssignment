@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="keywords" content="noi gio, Vietnam war, US">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% auto 25%;
+  grid-template-rows: auto auto auto;  
+  grid-gap: 1px;
+  background-color: white ;
+  padding: 0px;
+}
+.item1{grid-column: 1 / 4;}
+.item6{grid-column: 1 / 4;}
+
+/*khong nghich*/
+.grid-container > div {
+  border: 0px solid black;
+    text-align: center;
+}
+
+* {box-sizing: border-box}
+body {font-family: arial, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1200px;
+  max-height: 1200px;
+  position: relative;
+  margin: auto;
+}
+.feedback{
+  padding-left: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+</style>
+</head>
+<body >
+<div class="grid-container">
+ <div class="item1"> <img src="LOGO.jpg" width="200px", height="100px" align="left" onclick="window.location.href='mainpg.html'">
+    <h style="font-size:70px;color: black;"onclick="window.location.href='mainpg.html'">Vietnamese Film Reviewer</h>
+    </div>
+
+<div class="item2" >
+    <H style="font-size:35px;color: blue;">GENRE  </H>
+    <p></p>
+    <li onclick="window.location.href='HAIPHUONG.html'" style="color:red; color:red;text-align: left">ACTION</li>
+    <p></p>
+    <li onclick="window.location.href='TRANGQUYNH.html'"style="color:red; color:red;text-align: left">COMEDY</li>
+    <p></p>
+    <li onclick="window.location.href='HOAVANG.html'"style="color:red; color:red;text-align: left">DRAMA</li>
+    <p></p>
+    <li onclick="window.location.href='loinguyen.html'"style="color:red; color:red;text-align: left">HORROR</li>
+    <p></p>
+    <li onclick="window.location.href='noigio.html'"style="color:red; color:red;text-align: left">WAR</li>
+  </div> 
+
+
+
+
+  <div class="item3">
+<h style="font-size:50px; color: green; text-allign:center" >NOI GIO</h>
+</br>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/US9_eseG03g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <table style="width: 40%" align="center">
+      <tr>
+        <th>Director</th>
+        <td>Huy Thanh</td>
+      </tr>
+      <tr>
+        <th rowspan="5">Starring</th>
+        <td>The Anh</td>
+      </tr>
+      <tr><td>Thuy Van</td></tr>  
+      <tr><td>Van Hoa</td></tr>
+      <tr><td>Lam Toi</td></tr>
+      <tr><td>Hoang Van</td></tr>
+      <tr>
+        <th>Duration</th>
+        <td>93 minutes</td>
+      </tr>
+      <tr>
+        <th>Language</th>
+        <td>Vietnamese</td>
+      </tr>
+      <tr>
+        <th>Subtittle</th>
+        <td>N/A</td>
+      </tr>
+     </table>
+
+     <p></p>
+
+     
+     <p style="font-size: 20px; text-align: justify; padding: 0px 20px">The first film of the "Vietnamese Revolutionary Film" to talk about Vietnam War in the context of Southern of Vietnam against the US.</p>
+     <p style="font-size: 20px; text-align: justify; padding: 0px 20px">During the American invasion of Vietnam, in Phuong's family, there was Van, who followed the Vietcong of South Vietnam, and Phuong, who was the lieutenant of the Saigon army. After many years of separation, the two siblings met again. When Van learned that Phuong was a lieutenant of Saigon army, she chased Phuong away.</p>
+    <p>Van and her son were arrested in a concentration camp. In the camp Van participated in the struggle. Her son was killed by the enemy, and Van went crazy. After being released from prison, Van convinced her younger brother and many Saigon soldiers to switched side and killed American adviser..</p>
+	 </div>
+
+<div class="item5"> <a href="AD.html" target="_blank" rel="noopener noreferrer">
+  <img src="laptop.jpg "height='100px' width='150px'>
+  <img src="nokia.jpg "height='100px' width='150px'>
+  <img src="controller.jpg "height='100px' width='150px'>
+  <img src="headphone.jpg "height='100px' width='150px'>
+  <img src="mnk.jpg "height='100px' width='150px'></a></div>
+
+
+
+
+ <div class="item6" text-align="left">
+        <div class="feedback">
+        <h>Feedback</h>
+  
+          <p><input type="text" name="username" id="username" tabindex="1" aria-required="true" ><label for="username"><small> Your Name(required)
+          </small></label></p>
+
+          <p><input type="text" name="email" id="email" tabindex="2" aria-required="true" ><label for="email"><small> Your Mail(required)
+          </small></label></p>
+
+          <p><textarea name="Feedback" id="Feedback" cols="100%" rows= "10" tabindex="3"  aria-required="true" ></textarea></p>
+
+          <p><input type="submit" value="Submit"></p>
+
+        
+    </div></div>
+
+</div>
+</body>
+</html>

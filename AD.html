@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="laptop, smartphone, gaming, mouse and keyboard, headphone, smart deal, hot deal, cheap">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
+  grid-template-rows: auto auto auto%;  
+  grid-gap: 0px;
+  background-color: white ;
+  padding: 0px;
+}
+.item1{grid-column: 1 / 4;}
+.item6{grid-column: 1 / 4;}
+/*khong nghich*/
+.grid-container > div {
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center; 
+}
+nav ul { list-style-type: none; }
+li { list-style-type: none; }
+
+* {box-sizing: border-box}
+body {font-family: arial, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.feedback{
+  padding-left: 20px;
+  position: relative;
+  text-align: left;
+}
+
+.slideshow-container {
+  min-width: 500px;
+  max-width: 1200px;
+  min-height: 700px;
+  position: relative;
+  margin: auto;
+}
+.pay_container {
+  position: relative;
+  margin: auto;
+  min-width: 400px;
+  min-height: 700px
+}
+
+.logo_container{
+  min-height: 150px;
+  min-width: 
+}
+
+.ad_container{
+  min-width: 100px;
+  max-width: 400px;
+  min-height: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+  #content {
+    transform: translateY(-50%);
+    -webkit-transform:translateY(-50%);
+    top:50%;
+    transform: scale(2);
+    transform-origin: 0%;
+}
+}
+
+
+</style>
+</head>
+<body >
+<div class="grid-container">
+  <div class="item1"> <img src="ecom.png" width="200px", height="100px" align="left">
+    <h style="font-size:70px;color: black;align-content: center">Best Price Electronic Seller</h>
+    </div>
+
+  <div class="item2" >
+    <H style="font-size:50px;color: blue;"></H>
+    <p></p>
+    <div class="ad_container">
+    <li onclick="window.location.href='mainpg.html'" style="color:red">HONEST REVIEWER</li>
+    <p></p>
+    <li onclick="window.location.href='HAIPHUONG.html'" style="color:red"><img src="HAIPHUONG.jpg" width="100%", height="30%" align="CENTER"></li>
+    <p></p>
+    <li onclick="window.location.href='TRANGQUYNH.html'"style="color:red"><img src="TRANGQUYNH.jpg" width="100%", height="30%" align="CENTER"></li>
+    <p></p>
+    <li onclick="window.location.href='HOAVANG.html'"style="color:red"><img src="HOAVANG.jpg" width="100%", height="30%" align="CENTER"></li>
+    <p></p>
+    <li onclick="window.location.href='loinguyen.html'"style="color:red"><img src="loinguyen.jpg" width="100%", height="30%" align="CENTER"></li>
+    <p></p>
+    <li onclick="window.location.href='noigio.html'"style="color:red"><img src="noigio.jpg" width="100%", height="30%" align="CENTER"></li>
+  </div>  </div> 
+
+
+
+
+  <div class="item3" style="font-size:50px; color: red" align="CENTER" ><p></p>LIMITED HOT DEAL 
+    <div class="slideshow-container">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div class="mySlides fade">
+    <div class="text"style="color:red">$599.95</div>
+  </br>
+    <img src="laptop.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"  id="dragl" >
+    <img src="laptop2.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragl2" >
+      <p></p>
+    <img src="laptop3.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragl3" >
+    <img src="laptop4.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragl4" >
+      <p></p>
+    <img src="laptop5.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragl5" >
+    <img src="laptop6.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragl6" >
+  </div>
+
+    <div class="mySlides fade" >
+    <div class="text"style="color:red">$159.49</div>
+    <img src="phone.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp">
+    <img src="phone2.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp2">
+    <img src="phone3.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp3">
+    <img src="phone4.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp4">
+    <img src="phone5.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp5">
+      <p></p>
+    <img src="phone6.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp6">
+    <img src="phone7.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp7">
+    <img src="phone8.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp8">
+    <img src="phone9.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp9">
+    <img src="phone10.jpg" width="150px", height="300px" draggable="true" ondragstart="drag(event)" id="dragp10">
+  </div>
+  
+    <div class="mySlides fade" >
+    <div class="text"style="color:red">$99.99</div>
+    <img src="mnk.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk">
+    <img src="mnk2.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk2">
+      <p></p>
+    <img src="mnk3.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk3">
+    <img src="mnk4.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk4">
+      <p></p>
+    <img src="mnk5.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk5">
+    <img src="mnk6.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)" id="dragmk6">
+  </div>
+    
+    <div class="mySlides fade">
+    <div class="text"style="color:red">$59.49</div>
+    <img src="headphone.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp">
+    <img src="headphone2.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp2">
+      <p></p>
+    <img src="headphone3.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp3">
+    <img src="headphone4.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp4">
+      <p></p>
+    <img src="headphone5.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp5">
+    <img src="headphone6.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="draghp6">
+  </div>
+
+    <div class="mySlides fade">
+    <div class="text"style="color:red">$69.49</div>
+    <img src="controller.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc">
+    <img src="controller2.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc2">
+      <p></p>
+    <img src="controller3.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc3">
+    <img src="controller4.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc4">
+      <p></p>
+    <img src="controller5.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc5">
+    <img src="controller6.jpg" width="300px", height="200px" draggable="true" ondragstart="drag(event)"id="dragc6">
+    </div>
+
+
+    
+    
+  </div> 
+  </div>
+    <div class="item5" > <img src="ad_logo.png" width="200px", height="100px" align="CENTER" >
+      <div class="pay_container"  ondrop="copy(event)" ondragover="allowDrop(event)">
+    </div></div>
+
+    <div class="item6" text-align="left">
+        <div class="feedback">
+        <h>Feedback</h>
+  
+          <p><input type="text" name="username" id="username" tabindex="1" aria-required="true" ><label for="username"><small> Your Name(required)
+          </small></label></p>
+
+          <p><input type="text" name="email" id="email" tabindex="2" aria-required="true" ><label for="email"><small> Your Mail(required)
+          </small></label></p>
+
+          <p><textarea name="Feedback" id="Feedback" cols="100%" rows= "10" tabindex="3"  aria-required="true" ></textarea></p>
+
+          <p><input type="submit" value="Submit"></p>
+
+        
+    </div></div>
+ 
+
+
+</div>
+ 
+
+
+
+
+
+
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function allowDrop(ev) { 
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("img", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("img");
+  ev.target.appendChild(document.getElementById(data));
+}
+function copy(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("img");
+  ev.target.appendChild(document.getElementById(data).cloneNode(true));
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
